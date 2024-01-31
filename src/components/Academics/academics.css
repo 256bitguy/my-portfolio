@@ -1,0 +1,42 @@
+.border{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+     height:100vh;
+     justify-content: center;
+     align-items: center;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    border-top:2px solid red;
+     width: 70%;
+     flex-basis: 10vh;
+     
+}
+.listimage{
+    display: flex;
+}
+.menu{
+    flex:1;
+    text-align: center;
+    
+}
+.academics{
+    flex:5;
+    border:4px solid blue;
+    text-align: center;
+    font-size: 50px;
+    font-family: belleza;
+}
+#classs{
+    text-align: center;
+}
+.component{
+    border-left: 4px solid black ;
+    flex-basis:60%;
+    width: 80%;
+}
+.lists{
+    line-height: 60px;
+}
