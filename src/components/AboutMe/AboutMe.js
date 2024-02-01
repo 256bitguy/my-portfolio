@@ -1,4 +1,4 @@
-import aboutMe from './aboutMe.css';
+import   './aboutMe.css';
 const AboutMe=()=>{
     return (
         <div className="structure">

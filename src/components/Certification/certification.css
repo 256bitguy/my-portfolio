@@ -1,0 +1,12 @@
+.certification{
+    flex:5;
+    text-align: center;
+     border-left: 2px solid black;
+}
+.menu{
+    border-left: 3px solid red;
+}
+.image{
+    border-left: 4px solid black;
+    
+}
