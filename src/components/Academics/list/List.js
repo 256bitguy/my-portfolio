@@ -1,19 +1,18 @@
-const List=({title})=>{
+const List=(title)=>{
+    const tit=title.title.listItem;
+    console.log(tit);
     return(
-        <div>
- <div className="component">
-                    <h2 id="classs">{title.name}</h2>
-                   <div className="listimage">
-                   <div className="lists">
+         <div>
+                     <h2> {title.title.name}</h2>
+                     <div>
                         <ul>
-                            <li>Academic Achievement: Secured a perfect 10 CGPA in Class 10.</li>
-                            <li>Academic Achievement: Secured a perfect 10 CGPA in Class 10.</li>
-                            <li>Academic Achievement: Secured a perfect 10 CGPA in Class 10.</li>
+                            {tit.map((item)=>{
+                                return(
+                                    <li>{item}</li>
+                                )
+                            })}
                         </ul>
-                    </div>
-                    <div>image</div>
-                   </div>
-                </div>
+                     </div>
         </div>
     )
 }
