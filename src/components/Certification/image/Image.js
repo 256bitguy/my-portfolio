@@ -1,9 +1,11 @@
 const Image=({item})=>{
+    const i=item;
+    console.log(i)
 return (
     <div style={{
         width:"70%"
     }}>
-          <h2>{item.alt}</h2>
+          <img src={i.src} alt={i.alt}/>
     </div>
 )
 }

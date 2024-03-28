@@ -2,17 +2,19 @@ const List=(title)=>{
     const tit=title.title.listItem;
     console.log(tit);
     return(
-         <div style={{borderLeft:"2px solid black"}}>
-                     <h2 style={{textAlign:"center"}}>  {title.title.name}</h2>
-                     <div style={{textAlign:"right"}}>
-                        <ul >
+         <div>
+                     <h2> {title.title.name}</h2>
+                     <p>Description:{title.title.description}</p>
+                     <div>
+                        <ul>
                             {tit.map((item)=>{
                                 return(
-                                   <li style={{margin:"5px"}}>{item}</li>
+                                    <li>{item.description}</li>
                                 )
                             })}
                         </ul>
                      </div>
+                     <p>Technologies:{title.title.technologies}</p>
         </div>
     )
 }

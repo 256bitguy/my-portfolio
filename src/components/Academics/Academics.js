@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './academics.css';
 import List from './list/List';
 import { useEffect } from 'react';
+import { BiDownArrow } from "react-icons/bi";
 
 const list = [
   {
@@ -46,14 +47,18 @@ const Academics = () => {
   return (
     <div className='border'>
       <div className="title">
-        <div className="menu">
-          {
-            menu.map((menu) => (
-              <ul key={menu.id} style={{ width: "100px", height: "20px" }}>
+        <div  className='dropdown'>
+          <button className='dropdown-button' style={{background:"none",padding:"10px",fontSize:"38px",margin:"10px",borderStyle:"none"}}><BiDownArrow />
+</button>
+          <div className="dropdown-content">
+            {
+              menu.map((menu) => (
+                <ul key={menu.id} >
                 <li> <button onClick={() => change(menu.id)}>  {menu.title}</button></li>
               </ul>
             ))
           }
+          </div>
         </div>
         <div className="academics">Academics</div>
       </div>
